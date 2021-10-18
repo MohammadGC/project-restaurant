@@ -1,1 +1,14 @@
 // base code like extend and variable and so on
+
+$color-dark: #262626;
+$color-black: #000;
+$color-yellow: #d3ab55;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $color-dark;
+}
