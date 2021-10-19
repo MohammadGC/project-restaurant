@@ -1,23 +1,27 @@
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
-  background-color: #262626;
+a {
+  text-decoration: none;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  color: #d3ab55;
-  display: block;
-  width: 110px;
-  height: 110px;
-  border: 3px solid #d3ab55;
-  border-radius: 50%;
+body {
+  background-color: #262626;
 }
 
 .header {
@@ -29,10 +33,88 @@ body {
 }
 
 .header .brand {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffff;
+}
+
+.header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-banner .main-btn {
+  width: 250px;
+  height: 60px;
+  font-family: Sahel, Tahoma;
+  color: #d3ab55;
+  font-weight: 300;
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.header-banner .main-btn:hover {
+  background-color: #d3ab55;
+  color: #262626;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: #d3ab55;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+}
+
+.main-name {
+  font-size: 50px;
+  font-size: Sahel, Tahoma;
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.sub-name {
+  font-size: 18px;
+  font-size: Sahel, Tahoma;
+  color: #bbb;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-size: 80px;
+  font-family: Nastaliq, Tahoma;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: Sahel, Tahoma;
+  color: #bbb;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

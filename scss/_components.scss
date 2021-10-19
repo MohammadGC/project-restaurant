@@ -1,11 +1,37 @@
 // double style
-.logo {
-  @include flex-layout;
-  font-size: 70px;
-  color: $color-yellow;
-  display: block;
-  width: 110px;
-  height: 110px;
-  border: 3px solid $color-yellow;
-  border-radius: 50%;
-}
+// .logo {
+//   @include flex-layout;
+//   font-size: 70px;
+//   color: $color-yellow;
+//   width: 110px;
+//   height: 110px;
+//   margin-right: 20px;
+//   border: 3px solid $color-yellow;
+//   border-radius: 50%;
+// }
+
+// .main-name {
+//   font-size: 50px;
+//   color: $color-secondary;
+//   @include text-style;
+// }
+
+// .sub-name {
+//   font-size: 18px;
+//   color: $color-secondary;
+//   text-align: center;
+//   @include text-style;
+// }
+
+// .main-heading {
+//   font-size: 60px;
+//   font-weight: 300;
+//   color: $color-yellow;
+//   margin-bottom: 40px;
+// }
+// .sub-heading {
+//   font-size: 40px;
+//   font-weight: 300;
+//   color: $color-secondary;
+//   margin-bottom: 30px;
+// }
