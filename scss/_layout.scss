@@ -73,6 +73,7 @@
   cursor: pointer;
   transition: all 0.3s;
   outline: none;
+  margin-bottom: 30px;
 
   &:hover {
     background-color: $color-yellow;
@@ -130,5 +131,66 @@
   .sub-heading {
     font-size: 40px;
     margin-bottom: 30px;
+  }
+}
+
+//gallery
+
+.gallery {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  width: 33%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay {
+    @extend %fullscreen;
+    @include flex-layout;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    color: $color-white;
+    background-color: rgba($color-yellow, 0.5);
+    z-index: 10;
+    transition: left 0.5s;
+
+    &-heading {
+      @include text-style;
+      font-family: $font-nastaliq;
+      font-size: 50px;
+    }
+    &-paragraph {
+      font-family: $font-sahel;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    &-btn {
+      width: 150px;
+      height: 40px;
+      font-family: $font-sahel;
+      font-size: 20px;
+      color: $color-yellow;
+      background-color: $color-white;
+      border: 1px solid $color-yellow;
+      outline: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+
+  &-img {
+    @extend %fullscreen;
+    object-fit: cover;
+    opacity: 0.5;
   }
 }
