@@ -204,10 +204,43 @@
 }
 
 // footer
-
 .footer {
   padding: 70px;
   @include flex-layout;
   flex-direction: column;
-  display: none;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .social-media {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    &-item {
+      list-style: none;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-size: 50px;
+      color: $color-secondary;
+      transition: color 0.7s;
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &-copyright-paragraph {
+    font-family: $font-sahel;
+    font-size: 20px;
+    color: $color-secondary;
+    direction: rtl;
+  }
 }
