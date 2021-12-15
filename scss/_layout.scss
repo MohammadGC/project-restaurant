@@ -29,21 +29,59 @@
   margin-right: 20px;
   border: 3px solid $color-yellow;
   border-radius: 50%;
+  text-decoration: none;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+  }
 }
 
 .main-name {
   font-size: 50px;
   font-size: $font-sahel;
   color: $color-secondary;
-  @include text-style;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 335px) {
+    font-size: 13px;
+  }
 }
 
 .sub-name {
-  font-size: 18px;
+  font-size: 25px;
   font-size: $font-sahel;
   color: $color-secondary;
   text-align: center;
-  @include text-style;
+
+  @media only screen and (max-width: 650px) {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  @media only screen and (max-width: 340px) {
+    font-size: 12px;
+    
+  }
 }
 
 .main-heading {
@@ -52,6 +90,13 @@
   font-weight: 300;
   color: $color-yellow;
   margin-bottom: 40px;
+
+  @media only screen and (max-width: 1600px) {
+    font-size: 70px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 60px;
+  }
 }
 
 .sub-heading {
@@ -60,6 +105,18 @@
   font-family: $font-sahel;
   color: $color-secondary;
   margin-bottom: 30px;
+  text-align: center;
+
+  @media only screen and (max-width: 1600px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 18px;
+  }
 }
 
 .main-btn {
@@ -81,6 +138,18 @@
     background-color: $color-yellow;
     color: $color-dark;
   }
+
+  @media only screen and (max-width: 1300px) {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 130px;
+    height: 25px;
+    font-size: 12px;
+  }
 }
 
 // end header style
@@ -89,12 +158,23 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: 500px) {
+    height: 120vh;
+  }
+  @media only screen and (max-width: 300px) {
+    height: 160vh;
+  }
+
   &-left {
     width: 40%;
 
     img {
       width: 100%;
       opacity: 0.6;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: none;
     }
   }
 
@@ -103,39 +183,80 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 80px;
+
+    @media only screen and (max-width: 1300px) {
+      padding: 0 50px;
+      margin-top: 30px;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 100%;
+    }
   }
 
   .stars {
     margin: 30px 0;
+    @media only screen and (max-width: 1000px) {
+      margin: 15px 0;
+    }
   }
 
   .star {
     font-size: 15px;
     color: $color-yellow;
     margin-left: 3px;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 10px;
+    }
   }
 
   .description {
     font-family: $font-nastaliq;
     font-size: 25px;
     color: $color-secondary;
-    margin: 0 80px;
+
     direction: rtl;
     text-align: right;
 
     &::first-letter {
       padding-right: 17px;
     }
+
+    @media only screen and (max-width: 1600px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 1000) {
+      font-size: 14px;
+    }
   }
 
   .main-heading {
     font-size: 60px;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: 1600px) {
+      font-size: 70px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 60px;
+    }
   }
 
   .sub-heading {
     font-size: 40px;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: 1600px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 1300px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -174,12 +295,33 @@
       @include text-style;
       font-family: $font-nastaliq;
       font-size: 50px;
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 35px;
+      }
+
+      @media only screen and (max-width: 650px) {
+        font-size: 25px;
+      }
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
     }
 
     &-paragraph {
       font-family: $font-sahel;
       font-size: 30px;
       margin-bottom: 30px;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 650px) {
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 500px) {
+        display:none;
+      }
     }
 
     &-btn {
@@ -193,6 +335,19 @@
       outline: none;
       border-radius: 30px;
       cursor: pointer;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 15px;
+        width: 100px;
+        height: 35px;
+      }
+      @media only screen and (max-width: 650px) {
+        font-size: 10px;
+        width: 90px;
+      }
+      @media only screen and (max-width: 500px) {
+        height: 20px;
+      }
     }
   }
 
@@ -221,6 +376,10 @@
     justify-content: space-between;
     margin-bottom: 70px;
 
+    @media only screen and (max-width: 500px) {
+      width: 200px;
+    }
+
     &-item {
       list-style: none;
     }
@@ -234,6 +393,10 @@
       &:hover {
         color: $color-yellow;
       }
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -242,6 +405,16 @@
     font-size: 20px;
     color: $color-secondary;
     direction: rtl;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 20px;
+      width: 70%;
+      text-align: center;
+      margin: auto;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -262,12 +435,22 @@
       left: -50vw;
       transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 
+
+      @media only screen and (max-width: 800px){
+        display: none;
+      }
+
+
       .left-img {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba($color-black, 0.4);
         opacity: 0.7;
         border-radius: 10px;
+
+        @media only screen and (max-width: 1300px){
+          width: 55%;
+        }
       }
       .left-img-1 {
         top: 15%;
@@ -290,6 +473,11 @@
       right: -50vw;
       @include flex-layout;
       transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+
+      @media only screen and (max-width: 800px){
+        width: 100vw;
+        right: -100vw;
+      }
     }
     .nav-list {
       &-item {
@@ -306,6 +494,11 @@
         margin: 20px;
         text-align: center;
         transition: all 0.5s;
+
+        @media only screen and (max-width: 800px){
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
 
         &:hover {
           color: $color-yellow;
@@ -324,6 +517,11 @@
   right: 5%;
   z-index: 300;
 
+  @media only screen and (max-width: 800px) {
+    width: 35px;
+    height: 35px;
+  }
+
   .menu {
     @extend %fullscreen;
     display: flex;
@@ -338,6 +536,10 @@
       background-color: $color-yellow;
       transition: all 0.5s 0.5s;
       transform-origin: right;
+
+      @media only screen and (max-width: 800px) {
+        height: 1.5px;
+      }
     }
   }
 }
