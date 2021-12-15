@@ -1,0 +1,12 @@
+*{
+    direction: rtl;
+    text-align: right;
+}
+body{
+    background-color: #262626 !important;
+    color: #bbb !important;
+}
+footer{
+    background-color: #262626;
+    
+}
