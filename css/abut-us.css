@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Sahel;
+    src: url("../fonts/Sahel.eot");
+    src: url("../fonts/Sahel.ttf") format("ttf"),
+      url("../fonts/Sahel.woff") format("woff");
+    font-weight: normal;
+}
+*{
+    direction: rtl;
+    text-align: right;
+    font-family: Sahel;
+    font-size:18px;
+    color: #bbb;
+}
+body{
+    background: rgb(0,39,47);
+background: linear-gradient(90deg, rgba(0,39,47,0.8214636196275386) 0%, rgba(0,51,91,1) 100%);
+}
+
